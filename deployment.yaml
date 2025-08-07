@@ -25,3 +25,13 @@ spec:
                 configMapKeyRef:
                   key: database_url
                   name: calculator
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: calculator
+                  key: db_username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: calculator
+                  key: db_password
