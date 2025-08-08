@@ -1,0 +1,10 @@
+secret:
+  username: "cG9zdGdyZXM="   # base64-кодированное "postgres"
+  password: "cG9zdGdyZXM="   # base64-кодированное "postgres"
+  # чтобы зашифровать, можно использовать команду в Git Bash: echo -n "postgres" | base64
+
+config:
+  database_url: "jdbc:postgresql://192.168.56.1:5432/job4j_devops"
+
+containers:
+  image: "vadimstrya/job4j_devops:v.1.0.1"
